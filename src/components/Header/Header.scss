@@ -1,0 +1,49 @@
+@import "./src/styles/Variables";
+
+
+.app_header{
+  display: flex;
+  margin-bottom: $base*15;
+
+  &_col_right{
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+  }
+  @media(min-width: $screen-lg-max + 1){
+    align-items: flex-end;
+
+    &_col_left,
+    &_col_right{
+      flex-basis: 50%;
+    }
+  }
+
+  @media(max-width: $screen-lg-max){
+    flex-direction: column;
+    &_col_left{
+      margin-bottom: $base*5;
+    }
+  }
+}
+
+h1{
+  font-size: $font-size-xl;
+  line-height: $line-height-xl;
+  font-weight: 300;
+  margin: 0 0 $base*3;
+}
+h2{
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
+  font-weight: normal;
+  color: $color-red;
+  margin:0;
+}
+
+.link_admin{
+  text-decoration: none;
+  color: $color-red;
+  &:hover{
+    text-decoration: underline;
+  }
+}

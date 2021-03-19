@@ -1,0 +1,49 @@
+@import "src/styles/Variables";
+
+.tags_list{
+  border-top: 1px solid $color-gray;
+  margin-bottom: $base*15;
+  &_group{
+    padding-top: $base*5;
+    padding-bottom: $base*5;
+    display: flex;
+    border-bottom: 1px solid $color-gray;
+    &_title{
+      flex-basis: $base*50;
+      font-size: $font-size-lg;
+      line-height: $line-height-lg;
+    }
+    &_content{
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+    }
+  }
+}
+.tag_item{
+  display: flex;
+  margin-right: $base*2;
+  margin-bottom: $base*2;
+  &_button{
+    display: block;
+    padding: $base $base*3;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+    border: 1px solid $color-gray;
+    color: $color-black;
+    border-radius: $base;
+    transition: $transition-duration;
+    cursor: pointer;
+    outline: none;
+    &_active{
+      color: $color-white;
+      background-color: $color-red;
+      border-color: $color-red;
+    }
+
+    &:hover:not(&_active){
+      border-color: $color-black;
+    }
+  }
+}
+

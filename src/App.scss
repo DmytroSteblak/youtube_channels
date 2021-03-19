@@ -1,0 +1,8 @@
+@import "./src/styles/Variables";
+
+.App {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: $base*10 $base*5;
+  color: $color-black;
+}
